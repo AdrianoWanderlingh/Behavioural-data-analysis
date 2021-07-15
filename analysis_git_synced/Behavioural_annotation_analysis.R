@@ -49,6 +49,16 @@ library("forcats")
 # the statistical power will be affected! see https://www.blopig.com/blog/2013/10/wilcoxon-mann-whitney-test-and-a-small-sample-size/
 
 
+#It may be the case to use bootstrapping on these data, but the topic should be investigated more.
+# For example, not wanting to sum up or make the mean of all individual ants, bootstrapping could help!
+# Reading from "Practical 3 Programming in R(1).pdf":
+# "The main point here is that these are skewed data that only take positive values. They might, for example, be the absolute asymmetry in
+# the tail streamers of some bird species with elongated display plumage. With such data you:
+# . Can't do a t-test on the mean because they data are so skewed.
+# . Can't do a one-sample Wilcoxon test on the median, because it assumes a symmetrical
+# distribution.
+# . Can't do a permutation test for the median being zero, because no permutation of these data 
+#   can have a median equal to or less than zero (because no values are less than zero)."
 
 ############################################
 #######SOME PLOTTING########################
